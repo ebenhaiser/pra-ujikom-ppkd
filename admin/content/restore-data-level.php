@@ -57,7 +57,7 @@ else if(isset($_GET['restore-all'])){
           <div class="col-sm-6 mb-3">
             <label for="nama_Level" class="form-label">Nama Level</label>
             <input type="text" class="form-control" id="nama_level" name="nama_level" placeholder="Masukkan nama"
-              value="<?= isset($_GET['restore']) ? $rowRestore['nama_level'] : '' ?>" required>
+              value="<?= isset($_GET['restore']) ? $rowRestore['nama_level'] : '' ?>" readonly>
           </div>
           <div class="mb-3 mt-1">
           <button type="submit" class="btn" style="background-color: #00bf0d; color:white;" name="restore">
