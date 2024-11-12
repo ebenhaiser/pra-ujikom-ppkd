@@ -196,8 +196,8 @@ $rowNavbarUser = mysqli_fetch_assoc($queryNavbarUser);
       </a>
     </li>
     <li
-      class="menu-item <?= (isset($_GET['pg']) && ($_GET['pg'] == 'recyle-bin-data-level' || $_GET['pg'] == 'restore-data-level')) ? 'active' : '' ?>">
-      <a href="?pg=data-level" class="menu-link gap-3">
+      class="menu-item <?= (isset($_GET['pg']) && ($_GET['pg'] == 'recycle-bin-data-level' || $_GET['pg'] == 'restore-data-level')) ? 'active' : '' ?>">
+      <a href="?pg=recycle-bin-data-level" class="menu-link gap-3">
         <!-- <i class="menu-icon tf-icons bx bx-home-circle"></i> -->
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-postage-fill"
           viewBox="0 0 16 16">
