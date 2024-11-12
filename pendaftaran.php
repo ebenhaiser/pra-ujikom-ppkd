@@ -1,7 +1,7 @@
 <?php
 require_once 'admin/controller/connection.php';
 $queryGelombang = mysqli_query($connection, "SELECT * FROM gelombang WHERE aktif = 1 ORDER BY id ASC");
-$queryJurusan = mysqli_query($connection, "SELECT * FROM jurusan ORDER BY id ASC");
+$queryJurusan = mysqli_query($connection, "SELECT * FROM jurusan WHERE deleted_at=0 ORDER BY id ASC");
 
 ?>
 

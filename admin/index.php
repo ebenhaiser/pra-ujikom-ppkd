@@ -3,7 +3,7 @@ session_start();
 session_regenerate_id();
 ob_start();
 ob_clean();
-
+require_once 'controller/connection.php';
 if (empty($_SESSION)) {
   header("Location: controller/logout.php");
 }

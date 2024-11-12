@@ -1,5 +1,5 @@
 <?php
-  include 'connection.php';
+  include 'controller/connection.php';
   $id = $_SESSION['id'];
   $queryLogin = mysqli_query($connection, "SELECT * FROM users WHERE id='$id'");
   $rowLogin = mysqli_fetch_assoc($queryLogin);

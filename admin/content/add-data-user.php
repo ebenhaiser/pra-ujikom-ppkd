@@ -96,6 +96,7 @@ $queryJurusan = mysqli_query($connection, "SELECT * FROM jurusan");
           <button type="submit" class="btn btn-primary" name="<?php echo isset($_GET['edit']) ? 'edit' : 'add' ?>">
             <?php echo isset($_GET['edit']) ? 'Atur' : 'Tambah' ?>
           </button>
+        </div>
       </form>
     </div>
   </div>

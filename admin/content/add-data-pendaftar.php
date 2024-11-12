@@ -94,7 +94,7 @@ $queryGelombang = mysqli_query($connection, "SELECT * FROM gelombang");
 <div class="wrapper">
   <div class="card mt-3 me-3 ms-3">
     <div class="card-body">
-      <h3 class="card-title"><?= isset($_GET['edit']) ? 'Edit' : 'Tambah'?> Data User</h3>
+      <h3 class="card-title"><?= isset($_GET['edit']) ? 'Edit' : 'Tambah'?> Data Pendaftar</h3>
       <img
         src="<?= isset($_GET['edit']) && !empty($rowEdit['photo']) ? 'img/foto_peserta/' . $rowEdit['photo'] : 'https://placehold.co/100' ?>"
         width="150" alt="" class="mt-3">
@@ -222,6 +222,7 @@ $queryGelombang = mysqli_query($connection, "SELECT * FROM gelombang");
             <button type="submit" class="btn btn-primary" name="<?php echo isset($_GET['edit']) ? 'edit' : 'add' ?>">
               <?php echo isset($_GET['edit']) ? 'Atur' : 'Tambah' ?>
             </button>
+          </div>
       </form>
     </div>
   </div>

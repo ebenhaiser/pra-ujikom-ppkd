@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'connection.php';
+include 'controller/connection.php';
 if (isset($_POST['login'])) {
     $email    = $_POST['email']; //untuk mengambil nilai dari input
     $password = $_POST['password'];

@@ -139,6 +139,75 @@ $rowNavbarUser = mysqli_fetch_assoc($queryNavbarUser);
         <div data-i18n="Connections">Data Level</div>
       </a>
     </li>
+      
+    <li class="menu-header small text-uppercase">
+      <span class="menu-header-text">Recycle Bin</span>
+    </li>
+    <li class="menu-item <?= (isset($_GET['pg']) && ($_GET['pg'] == 'recycle-bin-data-user' || $_GET['pg'] == 'restore-data-user')) ? 'active' : '' ?>
+">
+      <a href="?pg=recycle-bin-data-user" class="menu-link gap-3">
+        <!-- <i class="menu-icon tf-icons bx bx-home-circle"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person"
+          viewBox="0 0 16 16">
+          <path
+            d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+          <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+        </svg>
+        <div data-i18n="Account">Restore Data User</div>
+      </a>
+    </li>
+    <li
+      class="menu-item <?= (isset($_GET['pg']) && ($_GET['pg'] == 'recycle-bin-data-pendaftar' || $_GET['pg'] == 'restore-data-pendaftar')) ? 'active' : '' ?>">
+      <a href="?pg=recycle-bin-data-pendaftar" class="menu-link gap-3">
+        <!-- <i class="menu-icon tf-icons bx bx-home-circle"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle"
+          viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+          <path fill-rule="evenodd"
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+        </svg>
+        <div data-i18n="Account">Restore Data Pendaftar</div>
+      </a>
+    </li>
+    <li
+      class="menu-item <?= (isset($_GET['pg']) && ($_GET['pg'] == 'recycle-bin-data-gelombang' || $_GET['pg'] == 'restore-data-gelombang')) ? 'active' : '' ?>">
+      <a href="?pg=recycle-bin-data-gelombang" class="menu-link gap-3">
+        <!-- <i class="menu-icon tf-icons bx bx-home-circle"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water"
+          viewBox="0 0 16 16">
+          <path
+            d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65" />
+        </svg>
+        <div data-i18n="Notifications">Restore Data Gelombang</div>
+      </a>
+    </li>
+    <li
+      class="menu-item <?= (isset($_GET['pg']) && ($_GET['pg'] == 'recycle-bin-data-jurusan' || $_GET['pg'] == 'restore-data-jurusan')) ? 'active' : '' ?>">
+      <a href="?pg=recycle-bin-data-jurusan" class="menu-link gap-3">
+        <!-- <i class="menu-icon tf-icons bx bx-home-circle"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z" />
+          <path
+            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z" />
+        </svg>
+        <div data-i18n="Connections">Restore Data Jurusan</div>
+      </a>
+    </li>
+    <li
+      class="menu-item <?= (isset($_GET['pg']) && ($_GET['pg'] == 'recyle-bin-data-level' || $_GET['pg'] == 'restore-data-level')) ? 'active' : '' ?>">
+      <a href="?pg=data-level" class="menu-link gap-3">
+        <!-- <i class="menu-icon tf-icons bx bx-home-circle"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-postage-fill"
+          viewBox="0 0 16 16">
+          <path d="M4.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z" />
+          <path
+            d="M3.5 1a1 1 0 0 0 1-1h1a1 1 0 0 0 2 0h1a1 1 0 0 0 2 0h1a1 1 0 1 0 2 0H15v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1h-1.5a1 1 0 1 0-2 0h-1a1 1 0 1 0-2 0h-1a1 1 0 1 0-2 0h-1a1 1 0 1 0-2 0H1v-1a1 1 0 1 0 0-2v-1a1 1 0 1 0 0-2V9a1 1 0 1 0 0-2V6a1 1 0 0 0 0-2V3a1 1 0 0 0 0-2V0h1.5a1 1 0 0 0 1 1M3 3v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1" />
+        </svg>
+        <div data-i18n="Connections">Restore Data Level</div>
+      </a>
+    </li>
 
     <!-- END Administrator -->
     <?php endif ?>
